@@ -23,7 +23,7 @@ trait ParentField
 	 */
 	public function addChild(Field $field): self
 	{
-		$this->children[] = $field;
+		$this->children[$field->getKey()] = $field;
 		return $this;
 	}
 
@@ -35,5 +35,14 @@ trait ParentField
 	{
 		$this->children = $children;
 		return $this;
+	}
+
+	/**
+	 * @param string $child
+	 *
+	 * @return Field
+	 */
+	public function __get( string $child ): Field {
+		return $this->children[ $child ];
 	}
 }

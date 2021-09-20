@@ -55,15 +55,11 @@ abstract class Field
 	}
 
 	/**
-	 * @return mixed
+	 * @return string
 	 */
-	public function getValue()
+	public function getKey(): string
 	{
-		if (!isset($this->value)) {
-			$this->value = get_field($this->getFieldName());
-		}
-
-		return $this->value;
+		return $this->key;
 	}
 
 	/**
@@ -82,5 +78,17 @@ abstract class Field
 	{
 		$this->parent = $parent;
 		return $this;
+	}
+
+	/**
+	 * @return mixed
+	 */
+	public function getValue()
+	{
+		if (!isset($this->value)) {
+			$this->value = get_field($this->getFieldName());
+		}
+
+		return $this->value;
 	}
 }

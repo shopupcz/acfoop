@@ -25,7 +25,7 @@ class Schema
 	{
 		$fields = [];
 		foreach ($this->records as $record) {
-			$fields[] = $record->duplicate();
+			$fields[$record->getKey()] = $record->duplicate();
 		}
 		return $fields;
 	}
