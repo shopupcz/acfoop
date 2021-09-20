@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Layout;
 
-class Accordion
+use ShopUp\Acfoop\Field;
+
+class Accordion extends Field
 {
 
 }

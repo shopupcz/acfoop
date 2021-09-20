@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Relational;
 
-class Forms
+use ShopUp\Acfoop\Field;
+
+class Forms extends Field
 {
 
 }

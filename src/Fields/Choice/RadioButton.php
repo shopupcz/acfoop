@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Choice;
 
-class RadioButton
+use ShopUp\Acfoop\Field;
+
+class RadioButton extends Field
 {
 
 }

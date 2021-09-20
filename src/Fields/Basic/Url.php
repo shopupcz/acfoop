@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Basic;
 
-class Url
+use ShopUp\Acfoop\Field;
+
+class Url extends Field
 {
 
 }

@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Jquery;
 
-class ColorPicker
+use ShopUp\Acfoop\Field;
+
+class ColorPicker extends Field
 {
 
 }

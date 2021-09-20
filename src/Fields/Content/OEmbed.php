@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Content;
 
-class OEmbed
+use ShopUp\Acfoop\Field;
+
+class OEmbed extends Field
 {
 
 }

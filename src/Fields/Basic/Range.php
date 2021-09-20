@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Basic;
 
-class Range
+use ShopUp\Acfoop\Field;
+
+class Range extends Field
 {
 
 }

@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Relational;
 
-class PageLink
+use ShopUp\Acfoop\Field;
+
+class PageLink extends Field
 {
 
 }

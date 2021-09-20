@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\WordPress;
 
-class PostTypes
+use ShopUp\Acfoop\Field;
+
+class PostTypes extends Field
 {
 
 }

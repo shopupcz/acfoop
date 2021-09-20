@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Relational;
 
-class PostObject
+use ShopUp\Acfoop\Field;
+
+class PostObject extends Field
 {
 
 }

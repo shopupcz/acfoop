@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Jquery;
 
-class GoogleReCaptcha
+use ShopUp\Acfoop\Field;
+
+class GoogleReCaptcha extends Field
 {
 
 }

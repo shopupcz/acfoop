@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Relational;
 
-class TaxonomyTerms
+use ShopUp\Acfoop\Field;
+
+class TaxonomyTerms extends Field
 {
 
 }

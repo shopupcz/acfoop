@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Choice;
 
-class Select
+use ShopUp\Acfoop\Field;
+
+class Select extends Field
 {
 
 }

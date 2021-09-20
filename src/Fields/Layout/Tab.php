@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Layout;
 
-class Tab
+use ShopUp\Acfoop\Field;
+
+class Tab extends Field
 {
 
 }

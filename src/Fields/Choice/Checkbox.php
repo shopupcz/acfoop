@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Choice;
 
-class Checkbox
+use ShopUp\Acfoop\Field;
+
+class Checkbox extends Field
 {
 
 }

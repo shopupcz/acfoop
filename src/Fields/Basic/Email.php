@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Basic;
 
-class Email
+use ShopUp\Acfoop\Field;
+
+class Email extends Field
 {
 
 }

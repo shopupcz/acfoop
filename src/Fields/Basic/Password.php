@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Basic;
 
-class Password
+use ShopUp\Acfoop\Field;
+
+class Password extends Field
 {
 
 }

@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Relational;
 
-class Relationship
+use ShopUp\Acfoop\Field;
+
+class Relationship extends Field
 {
 
 }

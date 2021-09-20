@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Jquery;
 
-class DatePicker
+use ShopUp\Acfoop\Field;
+
+class DatePicker extends Field
 {
 
 }

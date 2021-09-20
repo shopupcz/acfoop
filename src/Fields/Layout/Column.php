@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Layout;
 
-class Column
+use ShopUp\Acfoop\Field;
+
+class Column extends Field
 {
 
 }

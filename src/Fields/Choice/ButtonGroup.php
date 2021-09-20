@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Choice;
 
-class ButtonGroup
+use ShopUp\Acfoop\Field;
+
+class ButtonGroup extends Field
 {
 
 }

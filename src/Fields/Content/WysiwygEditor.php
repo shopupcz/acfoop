@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Content;
 
-class WysiwygEditor
+use ShopUp\Acfoop\Field;
+
+class WysiwygEditor extends Field
 {
 
 }

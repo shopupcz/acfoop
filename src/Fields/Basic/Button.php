@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Basic;
 
-class Button
+use ShopUp\Acfoop\Field;
+
+class Button extends Field
 {
 
 }

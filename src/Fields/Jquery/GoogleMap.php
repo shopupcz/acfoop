@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Jquery;
 
-class GoogleMap
+use ShopUp\Acfoop\Field;
+
+class GoogleMap extends Field
 {
 
 }

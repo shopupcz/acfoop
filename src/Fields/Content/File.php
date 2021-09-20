@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Content;
 
-class File
+use ShopUp\Acfoop\Field;
+
+class File extends Field
 {
 
 }

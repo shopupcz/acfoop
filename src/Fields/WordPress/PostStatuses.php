@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\WordPress;
 
-class PostStatuses
+use ShopUp\Acfoop\Field;
+
+class PostStatuses extends Field
 {
 
 }

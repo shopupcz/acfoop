@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Choice;
 
-class TrueFalse
+use ShopUp\Acfoop\Field;
+
+class TrueFalse extends Field
 {
 
 }

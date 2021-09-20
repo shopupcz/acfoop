@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Content;
 
-class Gallery
+use ShopUp\Acfoop\Field;
+
+class Gallery extends Field
 {
 
 }

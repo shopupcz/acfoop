@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Jquery;
 
-class TimePicker
+use ShopUp\Acfoop\Field;
+
+class TimePicker extends Field
 {
 
 }

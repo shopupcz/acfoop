@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Layout;
 
-class CloneField
+use ShopUp\Acfoop\Field;
+
+class CloneField extends Field
 {
 
 }

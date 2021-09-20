@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\WordPress;
 
-class UserRoles
+use ShopUp\Acfoop\Field;
+
+class UserRoles extends Field
 {
 
 }

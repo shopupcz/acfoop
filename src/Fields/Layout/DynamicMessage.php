@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Layout;
 
-class DynamicMessage
+use ShopUp\Acfoop\Field;
+
+class DynamicMessage extends Field
 {
 
 }

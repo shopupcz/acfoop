@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Relational;
 
-class AdvancedLink
+use ShopUp\Acfoop\Field;
+
+class AdvancedLink extends Field
 {
 
 }

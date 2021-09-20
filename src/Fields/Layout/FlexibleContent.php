@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Layout;
 
-class FlexibleContent
+use ShopUp\Acfoop\Field;
+
+class FlexibleContent extends Field
 {
 
 }

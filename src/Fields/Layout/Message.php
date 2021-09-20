@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Layout;
 
-class Message
+use ShopUp\Acfoop\Field;
+
+class Message extends Field
 {
 
 }

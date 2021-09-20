@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Basic;
 
-class Hidden
+use ShopUp\Acfoop\Field;
+
+class Hidden extends Field
 {
 
 }

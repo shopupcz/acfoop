@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop\Fields\Content;
 
-class CodeEditor
+use ShopUp\Acfoop\Field;
+
+class CodeEditor extends Field
 {
 
 }
