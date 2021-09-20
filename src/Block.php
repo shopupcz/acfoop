@@ -2,14 +2,19 @@
 
 namespace ShopUp\Acfoop;
 
-use ShopUp\Acfoop\Fields\Field;
 use ShopUp\Acfoop\Interfaces\Buildable;
+use ShopUp\Acfoop\Traits\ParentField;
 use ShopUp\Acfoop\Traits\Renderable;
 
 class Block implements Buildable
 {
 	use Renderable {
 		render as public contentRender;
+	}
+	use ParentField {
+		getChildren as private getFields;
+		addChild as public addField;
+		setChildren as private setFields;
 	}
 
 	/** @var string */
@@ -18,9 +23,6 @@ class Block implements Buildable
 	/** @var array */
 	private $classes;
 
-	/** @var Field[] */
-	private $fields = [];
-
 	/**
 	 * Builds all components with a schema.
 	 *
@@ -28,7 +30,7 @@ class Block implements Buildable
 	 */
 	public function build(): self
 	{
-		foreach ($this->fields as $field) {
+		foreach ($this->getFields() as $field) {
 			if ($field instanceof Buildable) {
 				$field->build();
 			}
@@ -76,23 +78,5 @@ class Block implements Buildable
 	public function setClasses(array $classes): void
 	{
 		$this->classes = $classes;
-	}
-
-	/**
-	 * @return Field[]
-	 */
-	public function getFields(): array
-	{
-		return $this->fields;
-	}
-
-	/**
-	 * @param Field $field
-	 * @return $this
-	 */
-	public function addField(Field $field): self
-	{
-		$this->fields[] = $field;
-		return $this;
 	}
 }
