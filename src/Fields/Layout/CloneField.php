@@ -11,7 +11,7 @@ abstract class CloneField extends Field
 	protected string $template;
 
 	use Renderable {
-		render as public renderContent();
+		render as public renderContent;
 	}
 
 	/**
