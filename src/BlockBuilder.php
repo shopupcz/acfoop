@@ -36,6 +36,6 @@ class BlockBuilder
 	 */
 	private static function getBlockClasses(array $_block): array
 	{
-		return array_merge($classes, explode(' ', $_block['className']));
+		return explode(' ', $_block['className']);
 	}
 }
