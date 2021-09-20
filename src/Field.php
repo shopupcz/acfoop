@@ -5,17 +5,24 @@ namespace ShopUp\Acfoop;
 abstract class Field
 {
 	/** @var string */
-	private $key;
+	private string $key;
 
 	/** @var null|Field */
-	private $parent = null;
+	private ?Field $parent = null;
 
 	public function __construct(string $key)
 	{
 		$this->key = $key;
 	}
 
-	abstract public static function make(string $key): self;
+	/**
+	 * @param string $key
+	 * @return static
+	 */
+	public static function make(string $key)
+	{
+		return new static($key);
+	}
 
 	/**
 	 * @return Field|null
