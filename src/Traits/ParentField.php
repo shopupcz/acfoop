@@ -34,6 +34,7 @@ trait ParentField
 	public function setChildren(array $children): self
 	{
 		foreach($children as $child) {
+			$child->setParent($this);
 			$this->children[$child->getKey()] = $child;
 		}
 		return $this;
