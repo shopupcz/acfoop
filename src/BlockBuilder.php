@@ -8,7 +8,7 @@ class BlockBuilder
 	 * @param array $_block
 	 * @return Block
 	 */
-	static function make(array $_block): Block
+	public static function make(array $_block): Block
 	{
 		$block = new Block();
 		$block->setID(self::getBlockId($_block));
