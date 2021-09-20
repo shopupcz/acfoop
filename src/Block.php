@@ -2,7 +2,9 @@
 
 namespace ShopUp\Acfoop;
 
-class Block
+use ShopUp\Acfoop\Interfaces\Buildable;
+
+class Block implements Buildable
 {
 	/** @var string */
 	private $id;
@@ -12,6 +14,21 @@ class Block
 
 	/** @var Field[] */
 	private $fields = [];
+
+	/**
+	 * Builds all components with a schema.
+	 *
+	 * @return static
+	 */
+	public function build(): self
+	{
+		foreach ($this->fields as $field) {
+			if ($field instanceof Buildable) {
+				$field->build();
+			}
+		}
+		return $this;
+	}
 
 	/**
 	 * @return string
@@ -57,7 +74,8 @@ class Block
 	 * @param Field $field
 	 * @return $this
 	 */
-	public function addField(Field $field): self {
+	public function addField(Field $field): self
+	{
 		$this->fields[] = $field;
 		return $this;
 	}
