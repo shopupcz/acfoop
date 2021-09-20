@@ -2,7 +2,7 @@
 
 namespace ShopUp\Acfoop\Fields\Basic;
 
-use ShopUp\Acfoop\Field;
+use ShopUp\Acfoop\Fields\Field;
 
 class Slug extends Field
 {

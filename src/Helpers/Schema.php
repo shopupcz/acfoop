@@ -2,7 +2,7 @@
 
 namespace ShopUp\Acfoop\Helpers;
 
-use ShopUp\Acfoop\Field;
+use ShopUp\Acfoop\Fields\Field;
 
 class Schema
 {

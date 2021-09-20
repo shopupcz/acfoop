@@ -2,7 +2,7 @@
 
 namespace ShopUp\Acfoop\Traits;
 
-use ShopUp\Acfoop\Field;
+use ShopUp\Acfoop\Fields\Field;
 
 trait ParentField
 {

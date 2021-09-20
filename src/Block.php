@@ -2,6 +2,7 @@
 
 namespace ShopUp\Acfoop;
 
+use ShopUp\Acfoop\Fields\Field;
 use ShopUp\Acfoop\Interfaces\Buildable;
 use ShopUp\Acfoop\Traits\Renderable;
 

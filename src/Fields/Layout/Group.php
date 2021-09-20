@@ -2,7 +2,7 @@
 
 namespace ShopUp\Acfoop\Fields\Layout;
 
-use ShopUp\Acfoop\Field;
+use ShopUp\Acfoop\Fields\Field;
 use ShopUp\Acfoop\Traits\ParentField;
 
 /**
