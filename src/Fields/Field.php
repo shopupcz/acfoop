@@ -10,6 +10,9 @@ abstract class Field
 	/** @var null|Field */
 	private ?Field $parent = null;
 
+	/** @var mixed $value */
+	private $value;
+
 	/**
 	 * @param string $key
 	 */
@@ -56,7 +59,11 @@ abstract class Field
 	 */
 	public function getValue()
 	{
-		return get_field($this->getFieldName());
+		if (!isset($this->value)) {
+			$this->value = get_field($this->getFieldName());
+		}
+
+		return $this->value;
 	}
 
 	/**
