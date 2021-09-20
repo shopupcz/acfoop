@@ -8,7 +8,9 @@ use ShopUp\Acfoop\Traits\Renderable;
 
 class Block implements Buildable
 {
-	use Renderable;
+	use Renderable {
+		render as public contentRender;
+	}
 
 	/** @var string */
 	private $id;
@@ -32,6 +34,16 @@ class Block implements Buildable
 			}
 		}
 		return $this;
+	}
+
+	public function render(string $template): string {
+		return View::render(
+			__DIR__ . '/template.phtml',
+			[
+				'block' => $this,
+				'content' => $this->contentRender($template)
+			]
+		);
 	}
 
 	/**
