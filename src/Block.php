@@ -3,9 +3,12 @@
 namespace ShopUp\Acfoop;
 
 use ShopUp\Acfoop\Interfaces\Buildable;
+use ShopUp\Acfoop\Traits\Renderable;
 
 class Block implements Buildable
 {
+	use Renderable;
+
 	/** @var string */
 	private $id;
 
