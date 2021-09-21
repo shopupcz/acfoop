@@ -2,6 +2,7 @@
 
 namespace ShopUp\Acfoop\Traits;
 
+use ShopUp\Acfoop\Block;
 use ShopUp\Acfoop\Fields\Field;
 use ShopUp\Acfoop\Interfaces\Buildable;
 
@@ -24,6 +25,9 @@ trait ParentField
 	 */
 	public function addChild(Field $field): self
 	{
+		if (!$this instanceof Block) {
+			$field->setParent($this);
+		}
 		$this->children[$field->getKey()] = $field;
 		return $this;
 	}
@@ -34,7 +38,7 @@ trait ParentField
 	 */
 	public function setChildren(array $children): self
 	{
-		foreach($children as $child) {
+		foreach ($children as $child) {
 			$child->setParent($this);
 			if ($child instanceof Buildable) {
 				$child->build();
@@ -66,7 +70,8 @@ trait ParentField
 	 *
 	 * @return Field
 	 */
-	public function __get( string $child ): Field {
-		return $this->children[ $child ];
+	public function __get(string $child): Field
+	{
+		return $this->children[$child];
 	}
 }

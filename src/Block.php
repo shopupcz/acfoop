@@ -38,7 +38,8 @@ class Block implements Buildable
 		return $this;
 	}
 
-	public function render(string $template): string {
+	public function render(string $template): string
+	{
 		return View::render(
 			__DIR__ . '/template.phtml',
 			[
@@ -58,10 +59,12 @@ class Block implements Buildable
 
 	/**
 	 * @param string $id
+	 * @return static
 	 */
-	public function setId(string $id): void
+	public function setId(string $id): self
 	{
 		$this->id = $id;
+		return $this;
 	}
 
 	/**
@@ -73,10 +76,22 @@ class Block implements Buildable
 	}
 
 	/**
-	 * @param array $classes
+	 * @param string $class
+	 * @return static
 	 */
-	public function setClasses(array $classes): void
+	public function addClass(string $class): self
+	{
+		$this->classes[] = $class;
+		return $this;
+	}
+
+	/**
+	 * @param array $classes
+	 * @return $this
+	 */
+	public function setClasses(array $classes): self
 	{
 		$this->classes = $classes;
+		return $this;
 	}
 }
