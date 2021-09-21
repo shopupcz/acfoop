@@ -1,8 +1,8 @@
 <?php
 
-namespace ShopUp\Acfoop\Fields\WordPress;
+namespace ShopUp\Wordpress\Acfoop\Fields\WordPress;
 
-use ShopUp\Acfoop\Fields\Field;
+use ShopUp\Wordpress\Acfoop\Fields\Field;
 
 class PostTypes extends Field
 {

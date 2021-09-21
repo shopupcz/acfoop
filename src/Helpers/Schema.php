@@ -1,8 +1,8 @@
 <?php
 
-namespace ShopUp\Acfoop\Helpers;
+namespace ShopUp\Wordpress\Acfoop\Helpers;
 
-use ShopUp\Acfoop\Fields\Field;
+use ShopUp\Wordpress\Acfoop\Fields\Field;
 
 class Schema
 {

@@ -1,5 +1,5 @@
 {
-    "name": "shopup/acfeoop",
+    "name": "shopup-wordpress/acfeoop",
     "description": "WordPress library for ACF plugin that helps to build blocks as objects for the FE.",
     "type": "library",
     "authors": [
@@ -11,7 +11,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "ShopUp\\Acfoop\\": "src/"
+            "ShopUp\Wordpress\\Wordpress\\Acfoop\\": "src/"
         }
     }
 }

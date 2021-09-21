@@ -1,10 +1,10 @@
 <?php
 
-namespace ShopUp\Acfoop\Traits;
+namespace ShopUp\Wordpress\Acfoop\Traits;
 
-use ShopUp\Acfoop\Block;
-use ShopUp\Acfoop\Fields\Field;
-use ShopUp\Acfoop\Interfaces\Buildable;
+use ShopUp\Wordpress\Acfoop\Block;
+use ShopUp\Wordpress\Acfoop\Fields\Field;
+use ShopUp\Wordpress\Acfoop\Interfaces\Buildable;
 
 trait ParentField
 {

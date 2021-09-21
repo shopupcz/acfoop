@@ -1,8 +1,8 @@
 <?php
 
-namespace ShopUp\Acfoop\Fields\Relational;
+namespace ShopUp\Wordpress\Acfoop\Fields\Relational;
 
-use ShopUp\Acfoop\Fields\Field;
+use ShopUp\Wordpress\Acfoop\Fields\Field;
 
 class PageLink extends Field
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace ShopUp\Acfoop\Fields\Layout;
+namespace ShopUp\Wordpress\Acfoop\Fields\Layout;
 
-use ShopUp\Acfoop\Fields\Field;
-use ShopUp\Acfoop\Helpers\Schema;
-use ShopUp\Acfoop\Interfaces\Buildable;
-use ShopUp\Acfoop\Traits\ParentField;
+use ShopUp\Wordpress\Acfoop\Fields\Field;
+use ShopUp\Wordpress\Acfoop\Helpers\Schema;
+use ShopUp\Wordpress\Acfoop\Interfaces\Buildable;
+use ShopUp\Wordpress\Acfoop\Traits\ParentField;
 
 /**
  * @method static Repeater make(string $key)

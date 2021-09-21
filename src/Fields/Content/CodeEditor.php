@@ -1,8 +1,8 @@
 <?php
 
-namespace ShopUp\Acfoop\Fields\Content;
+namespace ShopUp\Wordpress\Acfoop\Fields\Content;
 
-use ShopUp\Acfoop\Fields\Field;
+use ShopUp\Wordpress\Acfoop\Fields\Field;
 
 class CodeEditor extends Field
 {

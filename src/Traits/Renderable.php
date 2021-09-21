@@ -1,9 +1,9 @@
 <?php
 
-namespace ShopUp\Acfoop\Traits;
+namespace ShopUp\Wordpress\Acfoop\Traits;
 
 use Exception;
-use ShopUp\Acfoop\View;
+use ShopUp\Wordpress\Acfoop\View;
 
 trait Renderable
 {

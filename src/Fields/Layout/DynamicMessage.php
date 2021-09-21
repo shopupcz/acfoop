@@ -1,8 +1,8 @@
 <?php
 
-namespace ShopUp\Acfoop\Fields\Layout;
+namespace ShopUp\Wordpress\Acfoop\Fields\Layout;
 
-use ShopUp\Acfoop\Fields\Field;
+use ShopUp\Wordpress\Acfoop\Fields\Field;
 
 class DynamicMessage extends Field
 {

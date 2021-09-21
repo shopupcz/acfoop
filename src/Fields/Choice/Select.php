@@ -1,8 +1,8 @@
 <?php
 
-namespace ShopUp\Acfoop\Fields\Choice;
+namespace ShopUp\Wordpress\Acfoop\Fields\Choice;
 
-use ShopUp\Acfoop\Fields\Field;
+use ShopUp\Wordpress\Acfoop\Fields\Field;
 
 class Select extends Field
 {

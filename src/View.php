@@ -1,6 +1,6 @@
 <?php
 
-namespace ShopUp\Acfoop;
+namespace ShopUp\Wordpress\Acfoop;
 
 use Exception;
 
