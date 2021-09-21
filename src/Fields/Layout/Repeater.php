@@ -49,13 +49,4 @@ class Repeater extends Field implements Buildable
 			}
 		}
 	}
-
-	/**
-	 * @return Repeater
-	 */
-	public function duplicate(): Field
-	{
-		$this->build();
-		return parent::duplicate();
-	}
 }

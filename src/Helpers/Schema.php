@@ -3,6 +3,7 @@
 namespace ShopUp\Acfoop\Helpers;
 
 use ShopUp\Acfoop\Fields\Field;
+use ShopUp\Acfoop\Interfaces\Buildable;
 
 class Schema
 {

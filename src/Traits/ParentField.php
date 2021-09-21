@@ -3,6 +3,7 @@
 namespace ShopUp\Acfoop\Traits;
 
 use ShopUp\Acfoop\Fields\Field;
+use ShopUp\Acfoop\Interfaces\Buildable;
 
 trait ParentField
 {
@@ -35,6 +36,9 @@ trait ParentField
 	{
 		foreach($children as $child) {
 			$child->setParent($this);
+			if ($child instanceof Buildable) {
+				$child->build();
+			}
 			$this->children[$child->getKey()] = $child;
 		}
 		return $this;
