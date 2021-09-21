@@ -11,7 +11,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "ShopUp\\Wordpress\\Wordpress\\Acfoop\\": "src/"
+            "ShopUp\\WordPress\\Acfoop\\": "src/"
         }
     }
 }

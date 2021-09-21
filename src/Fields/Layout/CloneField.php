@@ -1,10 +1,10 @@
 <?php
 
-namespace ShopUp\Wordpress\Acfoop\Fields\Layout;
+namespace ShopUp\WordPress\Acfoop\Fields\Layout;
 
 use Exception;
-use ShopUp\Wordpress\Acfoop\Fields\Field;
-use ShopUp\Wordpress\Acfoop\Traits\Renderable;
+use ShopUp\WordPress\Acfoop\Fields\Field;
+use ShopUp\WordPress\Acfoop\Traits\Renderable;
 
 abstract class CloneField extends Field
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ShopUp\Wordpress\Acfoop\Fields;
+namespace ShopUp\WordPress\Acfoop\Fields;
 
 abstract class Field
 {

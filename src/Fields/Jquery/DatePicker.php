@@ -1,8 +1,8 @@
 <?php
 
-namespace ShopUp\Wordpress\Acfoop\Fields\Jquery;
+namespace ShopUp\WordPress\Acfoop\Fields\Jquery;
 
-use ShopUp\Wordpress\Acfoop\Fields\Field;
+use ShopUp\WordPress\Acfoop\Fields\Field;
 
 class DatePicker extends Field
 {

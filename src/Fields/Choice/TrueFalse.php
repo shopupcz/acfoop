@@ -1,8 +1,8 @@
 <?php
 
-namespace ShopUp\Wordpress\Acfoop\Fields\Choice;
+namespace ShopUp\WordPress\Acfoop\Fields\Choice;
 
-use ShopUp\Wordpress\Acfoop\Fields\Field;
+use ShopUp\WordPress\Acfoop\Fields\Field;
 
 class TrueFalse extends Field
 {

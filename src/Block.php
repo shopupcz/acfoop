@@ -1,10 +1,10 @@
 <?php
 
-namespace ShopUp\Wordpress\Acfoop;
+namespace ShopUp\WordPress\Acfoop;
 
-use ShopUp\Wordpress\Acfoop\Interfaces\Buildable;
-use ShopUp\Wordpress\Acfoop\Traits\ParentField;
-use ShopUp\Wordpress\Acfoop\Traits\Renderable;
+use ShopUp\WordPress\Acfoop\Interfaces\Buildable;
+use ShopUp\WordPress\Acfoop\Traits\ParentField;
+use ShopUp\WordPress\Acfoop\Traits\Renderable;
 
 class Block implements Buildable
 {

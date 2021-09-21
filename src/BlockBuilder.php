@@ -1,6 +1,6 @@
 <?php
 
-namespace ShopUp\Wordpress\Acfoop;
+namespace ShopUp\WordPress\Acfoop;
 
 class BlockBuilder
 {

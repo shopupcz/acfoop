@@ -1,8 +1,8 @@
 <?php
 
-namespace ShopUp\Wordpress\Acfoop\Fields\Layout;
+namespace ShopUp\WordPress\Acfoop\Fields\Layout;
 
-use ShopUp\Wordpress\Acfoop\Fields\Field;
+use ShopUp\WordPress\Acfoop\Fields\Field;
 
 class Accordion extends Field
 {

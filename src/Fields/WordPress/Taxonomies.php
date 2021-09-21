@@ -1,8 +1,8 @@
 <?php
 
-namespace ShopUp\Wordpress\Acfoop\Fields\WordPress;
+namespace ShopUp\WordPress\Acfoop\Fields\WordPress;
 
-use ShopUp\Wordpress\Acfoop\Fields\Field;
+use ShopUp\WordPress\Acfoop\Fields\Field;
 
 class Taxonomies extends Field
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ShopUp\Wordpress\Acfoop\Fields\Content;
+namespace ShopUp\WordPress\Acfoop\Fields\Content;
 
-use ShopUp\Wordpress\Acfoop\Fields\Field;
+use ShopUp\WordPress\Acfoop\Fields\Field;
 
 class WysiwygEditor extends Field
 {

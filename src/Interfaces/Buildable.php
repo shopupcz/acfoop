@@ -1,6 +1,6 @@
 <?php
 
-namespace ShopUp\Wordpress\Acfoop\Interfaces;
+namespace ShopUp\WordPress\Acfoop\Interfaces;
 
 interface Buildable
 {
