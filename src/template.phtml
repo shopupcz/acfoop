@@ -1,6 +1,6 @@
 <div
 	id="<?= $block->getID() ?>"
-	class="<?= $block->getClasses(); ?>"
+	class="<?= implode(' ', $block->getClasses()) ?>"
 >
 	<?= $content ?>
 </div>
