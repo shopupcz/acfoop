@@ -11,19 +11,17 @@ abstract class Field
 	private ?Field $parent = null;
 
 	/** @var bool|int|string */
-	private $selector;
+	private $selector = false;
 
 	/** @var mixed $value */
 	private $value;
 
 	/**
 	 * @param string $key
-	 * @param bool|int|string $selector
 	 */
-	public function __construct(string $key, $selector = false)
+	public function __construct(string $key)
 	{
 		$this->key = $key;
-		$this->selector = $selector;
 	}
 
 	/**
@@ -83,6 +81,14 @@ abstract class Field
 	{
 		$this->parent = $parent;
 		return $this;
+	}
+
+	/**
+	 * @param bool|int|string $selector
+	 */
+	public function setSelector( $selector )
+	{
+		$this->selector = $selector;
 	}
 
 	/**

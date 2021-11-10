@@ -6,13 +6,15 @@ class BlockBuilder
 {
 	/**
 	 * @param array $_block
+	 * @param bool|int|string $context
 	 * @return Block
 	 */
-	public static function make(array $_block): Block
+	public static function make(array $_block, $context = false): Block
 	{
 		$block = new Block();
 		$block->setID(self::getBlockId($_block));
 		$block->setClasses(self::getBlockClasses($_block));
+		$block->setContext($context);
 
 		return $block;
 	}

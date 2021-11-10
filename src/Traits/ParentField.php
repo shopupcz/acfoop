@@ -11,6 +11,17 @@ trait ParentField
 	/** @var Field[] */
 	private array $children = [];
 
+	/** @var bool|int|string */
+	private $context = false;
+
+	/**
+	 * @param bool|int|string $context
+	 */
+	public function setContext( $context )
+	{
+		$this->context = $context;
+	}
+
 	/**
 	 * @return Field[]
 	 */
@@ -25,6 +36,7 @@ trait ParentField
 	 */
 	public function addChild(Field $field): self
 	{
+		$field->setSelector($this->context);
 		if (!$this instanceof Block) {
 			$field->setParent($this);
 		}
