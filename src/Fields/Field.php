@@ -10,15 +10,20 @@ abstract class Field
 	/** @var null|Field */
 	private ?Field $parent = null;
 
+	/** @var bool|int|string */
+	private $selector;
+
 	/** @var mixed $value */
 	private $value;
 
 	/**
 	 * @param string $key
+	 * @param bool|int|string $selector
 	 */
-	public function __construct(string $key)
+	public function __construct(string $key, $selector = false)
 	{
 		$this->key = $key;
+		$this->selector = $selector;
 	}
 
 	/**
@@ -86,7 +91,7 @@ abstract class Field
 	public function getValue()
 	{
 		if (!isset($this->value)) {
-			$this->value = get_field($this->getFieldName());
+			$this->value = get_field($this->getFieldName(), $this->selector);
 		}
 
 		return $this->value;
