@@ -31,6 +31,7 @@ class Block implements Buildable
 	public function build(): self
 	{
 		foreach ($this->getFields() as $field) {
+			$field->setSelector($this->context);
 			if ($field instanceof Buildable) {
 				$field->build();
 			}

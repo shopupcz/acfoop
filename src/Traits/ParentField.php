@@ -23,6 +23,14 @@ trait ParentField
 	}
 
 	/**
+	 * @return bool|int|string
+	 */
+	public function getContext()
+	{
+		return $this->context;
+	}
+
+	/**
 	 * @return Field[]
 	 */
 	public function getChildren(): array
@@ -36,7 +44,12 @@ trait ParentField
 	 */
 	public function addChild(Field $field): self
 	{
-		$field->setSelector($this->context);
+		if (!empty(preg_grep("/.*(ParentField)/", class_uses(get_class($field))))) {
+			$field->setContext($this->context);
+		} else {
+			$field->setSelector($this->context);
+		}
+
 		if (!$this instanceof Block) {
 			$field->setParent($this);
 		}

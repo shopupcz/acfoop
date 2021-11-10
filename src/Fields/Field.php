@@ -84,6 +84,18 @@ abstract class Field
 	}
 
 	/**
+	 * @return bool|int|string
+	 */
+	public function getSelector()
+	{
+		if ($this->hasParent()) {
+			return $this->getParent()->getSelector();
+		}
+
+		return $this->selector;
+	}
+
+	/**
 	 * @param bool|int|string $selector
 	 */
 	public function setSelector( $selector )
@@ -97,7 +109,7 @@ abstract class Field
 	public function getValue()
 	{
 		if (!isset($this->value)) {
-			$this->value = get_field($this->getFieldName(), $this->selector);
+			$this->value = get_field($this->getFieldName(), $this->getSelector());
 		}
 
 		return $this->value;
