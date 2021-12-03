@@ -99,4 +99,12 @@ class Block implements Buildable
 		$this->classes = $classes;
 		return $this;
 	}
+
+	/**
+	 * @return bool
+	 */
+	public function getUseWrapper(): bool
+	{
+		return $this->useWrapper;
+	}
 }

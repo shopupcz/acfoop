@@ -1,10 +1,10 @@
-<?php if ( $block->useWrapper ) : ?>
+<?php if ( $block->getUseWrapper() ) : ?>
 	<div
 		id="<?= $block->getID() ?>"
 		class="<?= implode(' ', $block->getClasses()) ?>"
 	>
 <?php endif; ?>
 	<?= $content ?>
-<?php if ( $block->useWrapper() ) : ?>
+<?php if ( $block->getUseWrapper() ) : ?>
 	</div>
 <?php endif; ?>
