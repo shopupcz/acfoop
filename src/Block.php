@@ -23,13 +23,17 @@ class Block implements Buildable
 	/** @var array */
 	private $classes;
 
+	/** @var bool */
+	private $useWrapper;
+
 	/**
 	 * Builds all components with a schema.
 	 *
 	 * @return static
 	 */
-	public function build(): self
+	public function build(bool $useWrapper = false): self
 	{
+		$this->useWrapper = $useWrapper;
 		foreach ($this->getFields() as $field) {
 			$field->setSelector($this->context);
 			if ($field instanceof Buildable) {
