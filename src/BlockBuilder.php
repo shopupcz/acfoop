@@ -38,6 +38,9 @@ class BlockBuilder
 	 */
 	private static function getBlockClasses(array $_block): array
 	{
-		return explode(' ', $_block['className']);
+		if(array_key_exists('className', $_block)) {
+			return explode(' ', $_block['className']);
+		}
+		return [];
 	}
 }
