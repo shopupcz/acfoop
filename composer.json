@@ -1,11 +1,11 @@
 {
-    "name": "shopup-wordpress/acfeoop",
+    "name": "shopupcz/acfeoop",
     "description": "WordPress library for ACF plugin that helps to build blocks as objects for the FE.",
     "type": "library",
     "authors": [
         {
             "name": "Michal Tuček",
-            "email": "michaltk1@gmail.com"
+            "email": "michal.tucek@shopup.cz"
         }
     ],
     "require": {},
